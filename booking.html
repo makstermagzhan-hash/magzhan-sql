@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Билетке тапсырыс | TICKET STAR</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">TICKET STAR</div>
+    <nav>
+        <a href="index.html">Басты бет</a>
+        <a href="concerts.html">Концерттер</a>
+    </nav>
+</header>
+
+<div class="container">
+    <form id="bookingForm">
+        <h2>Билетке тапсырыс беру</h2>
+
+        <h3 id="bookingTitle">Концерт жүктелуде...</h3>
+
+        <input
+            type="text"
+            id="customerName"
+            placeholder="Аты-жөніңіз"
+            required
+        >
+
+        <input
+            type="tel"
+            id="phone"
+            placeholder="Телефон нөмірі"
+            required
+        >
+
+        <input
+            type="number"
+            id="quantity"
+            placeholder="Билет саны"
+            min="1"
+            max="10"
+            value="1"
+            required
+        >
+
+        <button class="btn" type="submit">
+            Тапсырыс беру
+        </button>
+    </form>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

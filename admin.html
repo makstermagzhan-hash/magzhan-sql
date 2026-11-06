@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | TICKET STAR</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">TICKET STAR ADMIN</div>
+    <nav>
+        <a href="index.html">Сайтқа қайту</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <form id="addConcertForm">
+        <h2>Жаңа концерт қосу</h2>
+
+        <input type="text" id="artist"
+               placeholder="Орындаушы" required>
+
+        <input type="text" id="title"
+               placeholder="Концерт атауы" required>
+
+        <input type="date" id="date" required>
+
+        <input type="text" id="place"
+               placeholder="Өтетін орны" required>
+
+        <input type="number" id="price"
+               placeholder="Билет бағасы" min="1" required>
+
+        <input type="number" id="available"
+               placeholder="Билет саны" min="1" required>
+
+        <textarea id="description"
+                  placeholder="Концерт туралы ақпарат"></textarea>
+
+        <button type="submit" class="btn">
+            Концерт қосу
+        </button>
+    </form>
+
+    <h2>Концерттерді басқару</h2>
+    <div class="concert-list" id="adminList"></div>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
